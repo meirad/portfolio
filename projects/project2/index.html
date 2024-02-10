@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let us lead you forward </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: transparent url('path1.png') 0% 0% no-repeat padding-box;
+            background-size: contain;
+            margin: 50px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 80vh;
+
+        }
+
+        .form-main-container {
+            background: #1A1A1AD4 0% 0% no-repeat padding-box;
+            width: 400px;
+            height: 450px;
+            padding: 20px;
+
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 20px;
+            justify-content: center;
+
+        }
+
+        .form-headline {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            margin: 30px 0;
+        }
+
+        .form-paragraph {
+            font-size: 1.25rem;
+            width: 350px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .form-control {
+            width: 400px;
+        }
+
+
+        .input {
+            width: 300px;
+            height: 30px;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border: 1px solid #D31C75;
+            border-bottom: 4px solid #D31C75;
+            padding: 10px;
+        }
+
+        .label {
+            display: flex;
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: #fff;
+            opacity: 1;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .bottom-btn {
+            font: normal normal bold 22px/30px Heebo;
+            letter-spacing: 0.33px;
+            color: #fff;
+            width: 166px;
+            height: 50px;
+            border: 1px solid #D31C75;
+            text-align: center;
+            border-radius: 0;
+            margin: 15px 0;
+            background-color: #D31C75;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+
+        .btn:hover {
+            background-color: #d45190;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-size: contain;
+                /* Adjust background size for mobile */
+                justify-content: center;
+                margin: 0;
+                background-size: 100% 200px;
+            }
+
+            .form-main-container {
+
+                width: 320px;
+                height: 450px;
+                padding: 20px;
+
+            }
+
+            .form-headline {
+                text-align: center;
+                font: normal normal 900 25px/30px Heebo;
+            }
+
+            .form-paragraph {
+                font: normal normal normal 15px/22px Heebo;
+                width: 229px;
+            }
+
+            .form-control {
+                width: 230px;
+            }
+
+
+            .input {
+                font: normal normal bold 14px/21px Heebo;
+                width: 230px;
+                height: 28px;
+            }
+
+            .label {
+                font: normal normal bold 14px/21px Heebo;
+            }
+
+
+
+            .bottom-btn {
+                width: 76px;
+                height: 33px;
+                font: normal normal bold 15px/20px Heebo;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="form-main-container">
+        <form class="form-container">
+            <h3 class="form-headline"> Let us lead you forward </h3>
+            <P class="form-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti iure quod nulla
+                alias.
+
+            <div class="form-control">
+                <label class="label"> Full Name </label>
+                <input class="input"></input>
+            </div>
+            <div class="form-control">
+                <label class="label">Email</label>
+                <input class="input"></input>
+            </div>
+
+            <div class="">
+                <button class="btn bottom-btn ">Send</button>
+            </div>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>

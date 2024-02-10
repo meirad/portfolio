@@ -1,0 +1,240 @@
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        /* Use 100vh for full viewport height */
+        text-align: center;
+        background-color: #fff;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        /* Add a higher z-index to ensure it's on top */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center-align list items vertically */
+        justify-content: center;
+        /* Center-align list items horizontally */
+        height: 100%;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+
+        right: 20px;
+        list-style-type: none;
+        z-index: 2000;
+        /* Make sure hamburger is on top */
+    }
+
+    /* Rest of your existing styles... */
+
+    #menuToggle:checked+.hamburger+nav {
+        display: block;
+    }
+
+    .btn2 {
+        color: #000;
+        padding: 10px 20px;
+        width: 100px;
+        border-radius: 500px;
+        border: none;
+        font-size: 18px;
+        background-color: transparent;
+        border: 1px solid #000;
+        margin-top: 25px;
+        transition: 0.3s all;
+    }
+
+    .btn2:hover {
+        transform: scale(1.05);
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-section h1 {
+        font-size: 4em;
+        width: 100%;
+    }
+
+    .banner-section p {
+        text-align: center;
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .baner-links {
+        flex-direction: column;
+    }
+
+    .banner-img img {
+        width: 300px;
+    }
+
+
+    .logo-imgs {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-top: 50px;
+    }
+
+    .logo-img {
+        display: inline-block;
+        margin-right: 10px;
+        width: 160px;
+        height: 63px;
+    }
+
+    .logo-imgs-container::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
+
+
+    .work-card {
+        flex-direction: column;
+
+    }
+
+    .in-touch,
+    .review,
+    .demo,
+    .setup {
+
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    .review {
+        margin-bottom: 150px;
+
+    }
+
+    .working-content {
+        flex-direction: column;
+    }
+
+    .work-center-img {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+    .working-content {
+        padding: 0;
+    }
+
+    .how-it-works .work-center {
+
+        width: 350px;
+        height: 400px;
+        margin-bottom: -600px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    /*   .how-it-works .section-title {} */
+
+    .how-it-works .section-subtitle {
+        width: 300px;
+    }
+
+    .try-content {
+        flex-direction: column-reverse;
+    }
+
+    .try-onir .app-download {
+
+        flex-direction: column;
+    }
+
+    .try-content {
+        width: 370px;
+
+    }
+
+    .try-onir .section-title {
+        text-align: center;
+    }
+
+    .try-onir .section-subtitle {
+        text-align: center;
+    }
+
+    .try-onir .row {
+        align-items: center;
+    }
+
+    .input-container input {
+        width: 350px;
+
+    }
+
+    .try-onir-img img {
+        width: 300px;
+    }
+
+    .subscribe-input .input-container button {
+        width: 350px;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer .row {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon {
+
+        justify-content: center;
+    }
+}
