@@ -19,9 +19,9 @@
 
 .button-container {
     display: flex;
-    /* Display children side by side */
+ 
     justify-content: center;
-    /* Center the buttons horizontally */
+
     margin-top: 20px;
 }
 

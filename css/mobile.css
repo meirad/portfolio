@@ -124,7 +124,13 @@
         justify-content: center;
     }
 
-
+    .btn{
+        margin: 3px;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 30px;
+    }
     .logo-img {
         width: 50px;
     }
